@@ -1,0 +1,8 @@
+config BR2_PACKAGE_SYSTEMTAP
+	bool "systemtap"
+    select BR2_PACKAGE_ELFUTILS
+	help
+	  SystemTap Package
+
+	  https://sourceware.org/systemtap/wiki
+

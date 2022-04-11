@@ -1,0 +1,23 @@
+config BR2_PACKAGE_WASTEDCORES
+	bool "wastedcores"
+	help
+	  https://github.com/sonicyang/wastedcores
+
+if BR2_PACKAGE_WASTEDCORES
+
+config BR2_PACKAGE_WASTEDCORES_NUM_CPU
+    default 4
+	string "Target CPU count"
+
+config BR2_PACKAGE_WASTEDCORES_MAX_SAMPLE
+    default 100000000
+	string "Max Entries"
+	help
+        Memory required is 32bytes * Entries Count
+
+config BR2_PACKAGE_WASTEDCORES_EXTRA
+   bool "Enable Extra Profiling"
+	help
+        Event 231 is context switching, with data cpu, pid(in 4 byte slots)
+
+endif

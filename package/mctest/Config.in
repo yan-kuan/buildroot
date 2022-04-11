@@ -1,0 +1,4 @@
+config BR2_PACKAGE_MCTEST
+	bool "mctest"
+	help
+	  https://github.com/sonicyang/mctest

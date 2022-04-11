@@ -1769,4 +1769,10 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
+menu "wastedcores"
+	source "package/systemtap/Config.in"
+	source "package/wastedcores/Config.in"
+	source "package/mctest/Config.in"
+endmenu
+
 endmenu

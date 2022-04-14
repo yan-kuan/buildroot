@@ -4,9 +4,13 @@
 #
 ################################################################################
 
-MCTEST_VERSION = master
-MCTEST_SITE = git@github.com:sonicyang/mctest.git
-MCTEST_SITE_METHOD = git
+#MCTEST_VERSION = master
+#MCTEST_SITE = git@github.com:sonicyang/mctest.git
+#MCTEST_SITE_METHOD = git
+MCTEST_VERSION=master
+MCTEST_SOURCE=mctest-$(MC_VERSION).tar.gz
+MCTEST_SITE = http://github.com/sonicyang/mctest/tarball/$(MCTEST_VERSION)
+
 
 MCTEST_DEPENDENCIES = linux
 

@@ -5,8 +5,8 @@
 ################################################################################
 
 WASTEDCORES_VERSION = master
-WASTEDCORES_SITE = git@github.com:sonicyang/wastedcores.git
-WASTEDCORES_SITE_METHOD = git
+WASTEDCORES_SOURCE = wasredcores-$(WASTEDCORES_VERSION).tar.gz
+WASTEDCORES_SITE = http://github.com/sonicyang/wastedcores/tarball/$(WASTEDCORES_VERSION)
 
 ifeq ($(BR2_PACKAGE_WASTEDCORES_EXTRA),y)
 WASTEDCORES_MODULE_MAKE_OPTS = "CFLAGS_sched_profiler.o=-DNUM_CPU=$(BR2_PACKAGE_WASTEDCORES_NUM_CPU) -DMAX_SAMPLE_ENTRIES=$(BR2_PACKAGE_WASTEDCORES_MAX_SAMPLE) -DWITH_SCHEDULING_SAMPLE_EXTRA"
